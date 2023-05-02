@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <style>
+        body {
+        font-family: 'Crimson Pro', serif;
+        font-size: 18px;
+        }
+    </style>
+    <script src="codigo.js"></script> 
+    <link rel="stylesheet" href="main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <br>
+    <div class="fecha">
+        <div class="fechaCompleta" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p id="diaSemana" class="diaSemana"></p>
+            <p id="dia" class="dia"></p>
+            <p>de</p>
+            <p id="mes" class="mes"></p>
+            <p>del</p>
+            <p id="year" class="year"></p>
+            <p>,</p>
+            <p id="horas" class="horas"></p>
+            <p>:</p>
+            <p id="minutos" class="minutos"></p>
+            <p>:</p>
+            <p id="segundos" class="segundos"></p>
+        </div>
+    </div>
+    <br>
+    <title>Diario "El Faro"</title>    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg position-relative has-text-link" >
+            <div class="container-fluid position-absolute">
+                <p class="navbar-brand" href="index.html">
+                    <img src="img/lighthouse.png" width="50" height="50">
+                </p>
+                <a class="navbar-brand text-primary" href="./index.html">El Faro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavdropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active  text-primary" aria-current="page" href="./nacional.html">Nacional</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link text-primary" href="./internacional.html">Internacional</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="" role="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                <li><a class="dropdown-item text-primary" href="./deportes.html">Deportes</a></li>
+                                <li><a class="dropdown-item text-primary" href="./negocios.html">Negocios</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-primary" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    <br>
+    <div class="logo" >
+        <h1>Diario El Faro</h1>
+        <img src="img/lighthouse.png" width="100px" height="150px">
+        <br>
+    </div>
+    <hr>
+    </header>
+    <main class="noticias">
+        <table>
+            <article class="card">
+                <figure class="card-header">
+                    <img src="img/ucrania.webp" width="250px" height="250px">
+                    </p>
+                </figure>
+                <div class="card-body">
+                    <div class="content">
+                        <a href="https://www.elmundo.es/internacional/2023/04/30/644df77c2700880026360f5d-directo.html">
+                        <p>
+                        <strong>Guerra Ucrania - Rusia</strong> <small>- Internacional</small>
+                        <br>
+                        Los misiles golpearon la aldea de Suzemka, situada a pocos kilómetros al norte de Ucrania Dos personas murieron por un ataque ucraniano con misiles contra un municipio ruso cerca de la frontera entre ambos países, dijeron el domingo las autoridades locales.
+                        </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="media-right">
+                </div>
+            </article>
+            <hr>
+        <table>
+            <article class="card">
+                <figure class="card-header">
+                    <img src="img/trump.webp" width="250px" height="250px">
+                    </p>
+                </figure>
+                <div class="card-body">
+                        <a href="https://www.latercera.com/nacional/noticia/ministro-jackson-descarta-haber-tenido-injerencia-en-contratacion-de-su-cunado-en-obras-publicas/V7J5RZLDQBCIRMGFKVWFR22YNQ/">
+                        <p>
+                        <strong>Trump viajará el lunes a Nueva York y comparecerá la tarde del martes ante el juez</strong> <small>- Internacional</small>
+                        <br>
+                        El expresidente estadounidense Donald Trump, imputado en el caso de un pago irregular a la actriz porno Stormy Daniels, viajará el lunes de Miami a Nueva York para presentarse ante el juez en la tarde del martes. Concretamente, su cita con el juez será a las 14.15 hora local, una vista que ha generado una enorme expectación y por esa razón el tribunal ha cancelado otras menos importantes para evitar el tránsito de personas a pie en el edificio por razones de seguridad.
+                        </p>
+                        </a>
+                    </div>
+            </article>
+            <hr>
+        
+    </main>
+    <main>
+        <br>
+        <footer class="text-center text-lg-start bg-light text-muted" >
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: rgba(0, 0, 0, 0.05);">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Visita nuestras redes sociales</span>
+                </div>
+                <div>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0,0.05);">
+            <p>Edición exclusiva - <strong>Melipilla 2023.</strong></p>
+            <p><strong>&copy;Diario El Faro.</strong> Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>

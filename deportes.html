@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <style>
+        body {
+        font-family: 'Crimson Pro', serif;
+        font-size: 18px;
+        }
+    </style>
+    <script src="codigo.js"></script> 
+    <link rel="stylesheet" href="main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <br>
+    <div class="fecha">
+        <div class="fechaCompleta" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p id="diaSemana" class="diaSemana"></p>
+            <p id="dia" class="dia"></p>
+            <p>de</p>
+            <p id="mes" class="mes"></p>
+            <p>del</p>
+            <p id="year" class="year"></p>
+            <p>,</p>
+            <p id="horas" class="horas"></p>
+            <p>:</p>
+            <p id="minutos" class="minutos"></p>
+            <p>:</p>
+            <p id="segundos" class="segundos"></p>
+        </div>
+    </div>
+    <br>
+    <title>Diario "El Faro"</title>    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg position-relative has-text-link" >
+            <div class="container-fluid position-absolute">
+                <p class="navbar-brand" href="index.html">
+                    <img src="img/lighthouse.png" width="50" height="50">
+                </p>
+                <a class="navbar-brand text-primary" href="./index.html">El Faro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavdropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active  text-primary" aria-current="page" href="./nacional.html">Nacional</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link text-primary" href="./internacional.html">Internacional</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="" role="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                <li><a class="dropdown-item text-primary" href="./deportes.html">Deportes</a></li>
+                                <li><a class="dropdown-item text-primary" href="./negocios.html">Negocios</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-primary" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    <br>
+    <div class="logo" >
+        <h1>Diario El Faro</h1>
+        <img src="img/lighthouse.png" width="100px" height="150px">
+        <br>
+    </div>
+    <hr>
+    <main class="noticias">
+        <table>
+            <article class="card">
+                <figure class="card-header">
+                    <img src="img/f1.avif" width="250px" height="250px">
+                    </p>
+                </figure>
+                <div class="card-body">
+                    <div class="card-body">
+                        <a href="https://as.com/motor/formula_1/alonso-lidera-antes-de-la-lluvia-n/" >
+                        <p>
+                        <strong>Alonso lidera antes de la lluvia</strong> <small>- Formula 1</small>
+                        <br>
+                        Viernes sufrido en Australia. Porque por la mañana el asfalto estuvo difícil, con errores variados por parte de unos cuantos pilotos; y por la tarde directamente se puso a llover en el verano austral. Alonso lideró los Libres 2 con una muy buena vuelta con los neumáticos medios (1:18.887). Antes de que el lector empiece a buscar treinta y treses en las nubes del cielo, conviene contar todo lo que pasó: Checo Pérez abortó en el tercer sector por culpa del tráfico cuando había marcado el récord en los dos anteriores (con tres décimas sobre Fernando) y Carlos Sainz (5º) apuntaba a un registro medio segundo más rápido hasta que la misma razón le obligó a descartar el intento. Al final Leclerc y Verstappen completaron el top-3 de la sesión vespertina, si bien el neerlandés fue el más rápido de la jornada con su vuelta de los Libres 1 (1:18.790). Eso sí, con el neumático blando.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            </article>
+            <hr>
+        </table>
+        <article class="card">
+            <figure class="card-header">
+                <img src="img/juegos-olimpicos.jpg" width="250px" height="250px">
+                </p>
+            </figure>
+            <div class="card-body">
+                <div class="content">
+                    <a href="https://www.chvnoticias.cl/deportes/chilevision-transmision-juegos-olimpicos-2024_20230327/">
+                    <small>
+                    <strong>¡Atención, fanáticos de los deportes! Chilevisión transmitirá los Juegos Olímpicos de París 2024</strong> - Juegos Olimpicos</small>
+                    <br>
+                    Una excelente noticia para el deporte es la que acaba de confirmar Chilevisión. Y es que la señal de Paramount tendrá en exclusiva los derechos de transmisión en televisión abierta de los Juegos Olímpicos de París 2024. El canal tendrá en televisión abierta la transmisión exclusiva de las 200 horas de los 32 deportes en el evento deportivo, que se realiza cada cuatro años, a partir de julio de 2024.
+                    </p>
+                </div>
+                </a>
+            </div>
+        </article>
+        <hr>
+        </table>
+        <table>
+            <article class="card">
+                <figure class="card-header">
+                    <img src="img/gimnasia.png" width="250px" height="250px">
+                    </p>
+                </figure>
+                <div class="card-body">
+                    <div class="content">
+                        <a href="https://www.eltiempo.com/deportes/otros-deportes/gimnasia-como-se-puntuan-los-ejercicios-en-este-deporte-755333">
+                        <small>
+                        <strong>Gimnasia: así se determina los ganadores de cada competencia en este deporte</strong> - Gimnasia</small>
+                        <br>
+                        La Federación Internacional de Gimnasia tiene un código de puntuación en el que se estipulan las normas que deben seguir quienes practican este deporte para tener una buena competencia.Por esa razón, si usted es un apasionado de este deporte o simplemente tiene curiosidad por saber cómo se elige a los ganadores de cada competencia, está leyendo el artículo indicado.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+                <div class="media-right">
+                </div>
+            </article>
+        </table>
+    </main>
+    <main>
+        <footer class="text-center text-lg-start bg-light text-muted" >
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: rgba(0, 0, 0, 0.05);">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Visita nuestras redes sociales</span>
+                </div>
+                <div>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0,0.05);">
+            <p>Edición exclusiva - <strong>Melipilla 2023.</strong></p>
+            <p><strong>&copy;Diario El Faro.</strong> Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>
