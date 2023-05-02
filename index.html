@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <style>
+        body {
+        font-family: 'Crimson Pro', serif;
+        font-size: 18px;
+        }
+    </style>
+    <script src="codigo.js"></script> 
+    <link rel="stylesheet" href="main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <br>
+    <div class="fecha">
+        <div class="fechaCompleta" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p id="diaSemana" class="diaSemana"></p>
+            <p id="dia" class="dia"></p>
+            <p>de</p>
+            <p id="mes" class="mes"></p>
+            <p>del</p>
+            <p id="year" class="year"></p>
+            <p>,</p>
+            <p id="horas" class="horas"></p>
+            <p>:</p>
+            <p id="minutos" class="minutos"></p>
+            <p>:</p>
+            <p id="segundos" class="segundos"></p>
+        </div>
+    </div>
+    <br>
+    <title>Diario "El Faro"</title>    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg position-relative has-text-link" >
+            <div class="container-fluid position-absolute">
+                <p class="navbar-brand" href="index.html">
+                    <img src="img/lighthouse.png" width="50" height="50">
+                </p>
+                <a class="navbar-brand text-primary" href="./index.html">El Faro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavdropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active  text-primary" aria-current="page" href="./nacional.html">Nacional</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link text-primary" href="./internacional.html">Internacional</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="" role="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                <li><a class="dropdown-item text-primary" href="./deportes.html">Deportes</a></li>
+                                <li><a class="dropdown-item text-primary" href="./negocios.html">Negocios</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-primary" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    <br>
+    <div class="logo" >
+        <h1>Diario El Faro</h1>
+        <img src="img/lighthouse.png" width="100px" height="150px">
+        <br>
+    </div>
+    <hr>
+    </header>
+    <main>
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/juegos-olimpicos.jpg" class="d-block w-100" alt="..." width="150" height="300px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chilevisión transmitirá los Juegos Olímpicos de París 2024</h5>
+                        <p>Una excelente noticia para el deporte es la que acaba de confirmar Chilevisión.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/chatGPT.jpg" class="d-block w-100" alt="..." width="150" height="300px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Italia primer país occidental en bloquear el acceso </h5>
+                        <p>El organismo gubernamental para la protección de datos italiano anunció que existen preocupaciones</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/reo.webp" class="d-block w-100" alt="..." width="150" height="300px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Prisión preventiva a último detenido por caso de asesinato de carabinera</h5>
+                        <p>Juzgado de Garantía de Quilpué decretó la prisión preventiva contra C.A.R.F</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+        <br>
+        <div class="card-group">
+            <div class="card" >
+                <div class="card">
+                    <img src="img/jackson.avif" width="242px" height="161" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jackson descarta haber tenido “injerencia</h5>
+                        <p class="card-text">“No he tenido absolutamente ninguna injerencia”. Esa fue la tajante respuesta del ministro de Desarrollo Social </p>
+                        <a href="./nacional.html" class="btn btn-primary">Ir a noticia</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Nacional</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card">
+                    <img src="img/trump.webp" width="242px" height="161" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Trump viajará el lunes a Nueva York y comparecerá</h5>
+                        <p class="card-text">El expresidente estadounidense Donald Trump, imputado en el caso de un pago irregular a la actriz porno... </p>
+                        <a href="./internacional.html" class="btn btn-primary">Ir a noticia</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Internacional</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card">
+                    <img src="img/f1.avif" width="242px" height="161" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Alonso lidera antes de la lluvia</h5>
+                        <p class="card-text">Viernes sufrido en Australia. Porque por la mañana el asfalto estuvo difícil, con errores variados  por parte de unos cuantos pilotos; y por la tarde directamente</p>
+                        <a href="./deportes.html" class="btn btn-primary">Ir a la noticia</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Deportes</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card">
+                    <img src="img/apple-oficina.webp" width="242px" height="161" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Primer ministro chino recibe en Beijing a representantes de Fortune 500</h5>
+                        <p class="card-text">El primer ministro de China, Li Qiang, dio la bienvenida este lunes en Beijing a los representantes...</p>
+                        <a href="./negocios.html" class="btn btn-primary">Ir a la noticia</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Negocios</small>
+                    </div>
+                </div>
+            </div>       
+            </div>
+        </div>
+    </main>
+    <main>
+        <br>
+        <footer class="text-center text-lg-start bg-light text-muted" >
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: rgba(0, 0, 0, 0.05);">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Visita nuestras redes sociales</span>
+                </div>
+                <div>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset" style="background-color: rgba(0, 0, 0, 0.05);">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0,0.05);">
+            <p>Edición exclusiva - <strong>Melipilla 2023.</strong></p>
+            <p><strong>&copy;Diario El Faro.</strong> Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>
